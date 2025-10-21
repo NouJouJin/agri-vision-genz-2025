@@ -158,7 +158,7 @@ export default function Guidelines() {
           {/* 応募ボタン */}
           <motion.div variants={itemVariants} className="text-center">
             <a
-              href="#"
+              href="https://metagri-labo.com/agri-vision-genz-2025/"
               className="inline-flex items-center px-10 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold text-lg rounded-full hover:from-green-600 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-green-500/50 hover:scale-105"
             >
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
