@@ -55,7 +55,8 @@ export default function Guidelines() {
                 <h3 className="text-2xl font-bold text-white">テーマ</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                「もしも未来農業戦略室 "初代室長" に任命されたら？」<br />
+                {/* ★★★ ここを修正 ★★★ */}
+                「もしも未来農業戦略室 &quot;初代室長&quot; に任命されたら？」<br />
                 Z世代に刺さる未来の農業プロモーション動画を募集します。
               </p>
             </motion.div>
@@ -161,7 +162,7 @@ export default function Guidelines() {
           {/* 応募ボタン */}
           <motion.div variants={itemVariants} className="text-center">
             <a
-              href="https://metagri-labo.com/agri-vision-genz-2025/#entry" // LPの応募フォームセクションへのアンカーリンク
+              href="https://metagri-labo.com/agri-vision-genz-2025/#entry"
               className="inline-flex items-center px-10 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold text-lg rounded-full hover:from-green-600 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-green-500/50 hover:scale-105"
             >
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
