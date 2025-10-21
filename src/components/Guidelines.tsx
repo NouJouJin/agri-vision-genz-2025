@@ -55,8 +55,8 @@ export default function Guidelines() {
                 <h3 className="text-2xl font-bold text-white">テーマ</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                「生成AIで描く、農業の新しい未来」<br />
-                Z世代ならではの視点で、農業の可能性を広げる作品を募集します。
+                「もしも未来農業戦略室 "初代室長" に任命されたら？」<br />
+                Z世代に刺さる未来の農業プロモーション動画を募集します。
               </p>
             </motion.div>
 
@@ -71,8 +71,7 @@ export default function Guidelines() {
                 <h3 className="text-2xl font-bold text-white">応募期間</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                2025年1月1日 〜 2025年3月31日<br />
-                <span className="text-sm text-gray-400">※詳細は公式サイトをご確認ください</span>
+                2025年10月10日(金) 〜 11月2日(日) 23:59
               </p>
             </motion.div>
 
@@ -87,8 +86,8 @@ export default function Guidelines() {
                 <h3 className="text-2xl font-bold text-white">応募資格</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Z世代（1995年〜2012年生まれ）のクリエイター<br />
-                個人・チームでの応募が可能です
+                年齢、国籍、プロ・アマ問わず、未来の農業に関心のあるすべての方。<br />
+                <span className="text-sm text-gray-400">※18歳未満の方は保護者の同意が必要です。</span>
               </p>
             </motion.div>
 
@@ -105,15 +104,15 @@ export default function Guidelines() {
               <ul className="text-gray-300 leading-relaxed space-y-2">
                 <li className="flex items-start">
                   <span className="text-green-400 mr-2">•</span>
-                  <span>最優秀賞: 賞金50万円 + トロフィー</span>
+                  <span><strong>グランプリ (初代室長賞):</strong> 新米10kg + Metagri会員証NFT</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-400 mr-2">•</span>
-                  <span>優秀賞: 賞金30万円</span>
+                  <span><strong>準グランプリ:</strong> 新米5kg + Metagri会員証NFT</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-400 mr-2">•</span>
-                  <span>特別賞: 各種協賛企業賞</span>
+                  <span><strong>Metagri特別賞:</strong> 旬の厳選農産物 + Metagri会員証NFT</span>
                 </li>
               </ul>
             </motion.div>
@@ -127,30 +126,34 @@ export default function Guidelines() {
               </svg>
               作品規定
             </h3>
-            <ul className="grid md:grid-cols-2 gap-4 text-gray-300">
+            <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-gray-300">
               <li className="flex items-start">
                 <span className="text-green-400 mr-3 mt-1">✓</span>
-                <span>動画生成AIツールを使用した作品であること</span>
+                <span>動画生成AIを活用した30〜60秒の作品</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-400 mr-3 mt-1">✓</span>
-                <span>動画の長さは30秒〜3分以内</span>
+                <span>9:16の縦型動画を推奨 (横型も可)</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-400 mr-3 mt-1">✓</span>
-                <span>オリジナル作品であること</span>
+                <span>MP4形式 / 720p以上 / 24 or 30fps</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-400 mr-3 mt-1">✓</span>
-                <span>著作権・肖像権等の権利を侵害しないこと</span>
+                <span>音声レベルは-14 LUFSを目安</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-400 mr-3 mt-1">✓</span>
-                <span>YouTubeに公開可能な形式であること</span>
+                <span>BGM・効果音は権利をクリアした音源を使用</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-400 mr-3 mt-1">✓</span>
-                <span>使用したAIツールを明記すること</span>
+                <span>日本語または英語 (日本語字幕必須/SRT可)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-400 mr-3 mt-1">✓</span>
+                <span>1人(1チーム)3作品まで応募可能</span>
               </li>
             </ul>
           </motion.div>
@@ -158,7 +161,7 @@ export default function Guidelines() {
           {/* 応募ボタン */}
           <motion.div variants={itemVariants} className="text-center">
             <a
-              href="https://metagri-labo.com/agri-vision-genz-2025/"
+              href="https://metagri-labo.com/agri-vision-genz-2025/#entry" // LPの応募フォームセクションへのアンカーリンク
               className="inline-flex items-center px-10 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold text-lg rounded-full hover:from-green-600 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-green-500/50 hover:scale-105"
             >
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -167,7 +170,7 @@ export default function Guidelines() {
               応募フォームへ
             </a>
             <p className="text-gray-400 text-sm mt-4">
-              ※応募フォームは外部サイトに遷移します
+              ※公式サイトの応募フォームへ遷移します
             </p>
           </motion.div>
         </motion.div>
