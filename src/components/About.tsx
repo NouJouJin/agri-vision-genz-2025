@@ -86,7 +86,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">第1回の実績</h3>
               <p className="text-gray-300 leading-relaxed">
-                第1回コンテストでは、全国から100件以上の応募があり、革新的なアイデアが多数集まりました。今回はさらなる進化を目指します。
+                第1回コンテストでは、世界から33件の応募があり、革新的なアイデアが多数集まりました。今回はさらなる進化を目指します。
               </p>
             </motion.div>
           </div>
