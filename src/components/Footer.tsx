@@ -34,7 +34,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-400 transition-colors">
+                <a href="https://metagri-labo.com/contact/" className="hover:text-green-400 transition-colors">
                   お問い合わせ
                 </a>
               </li>
@@ -46,7 +46,7 @@ export default function Footer() {
             <h4 className="text-lg font-bold text-white mb-4">Follow Us</h4>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://x.com/Metagrilabo"
                 className="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10"
                 aria-label="Twitter"
               >
@@ -55,7 +55,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/metagrilabo/"
                 className="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10"
                 aria-label="Instagram"
               >
@@ -64,7 +64,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/channel/UCAvDULnFToZUnMeMb_Ghhbg/"
                 className="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10"
                 aria-label="YouTube"
               >
@@ -82,7 +82,7 @@ export default function Footer() {
         {/* コピーライト */}
         <div className="border-t border-white/10 pt-8">
           <p className="text-center text-gray-400 text-sm">
-            &copy; 2025 AGRI VISION for Gen Z. All rights reserved.
+            &copy; 2025 MetagriLabo. All rights reserved.
           </p>
         </div>
       </div>
