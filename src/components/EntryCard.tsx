@@ -43,6 +43,14 @@ export default function EntryCard({ entry, onClick, index }: EntryCardProps) {
           </div>
         )}
 
+        {/* 作品番号バッジ */}
+        <div className="absolute top-4 left-4 z-10">
+          <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold px-4 py-2 rounded-full shadow-lg border-2 border-white/20">
+            <span className="text-sm">No.</span>
+            <span className="text-lg ml-1">{entry.id}</span>
+          </div>
+        </div>
+
         {/* 再生オーバーレイ */}
         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
           <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
