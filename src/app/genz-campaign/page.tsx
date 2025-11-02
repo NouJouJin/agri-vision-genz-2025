@@ -1,5 +1,6 @@
 import GenZHero from '@/components/genz/GenZHero';
 import VoteBenefits from '@/components/genz/VoteBenefits';
+import Entries from '@/components/Entries';
 import Voting from '@/components/Voting';
 import ShareCTA from '@/components/genz/ShareCTA';
 import Footer from '@/components/Footer';
@@ -14,6 +15,7 @@ export default function GenZCampaignPage() {
     <main className="min-h-screen">
       <GenZHero />
       <VoteBenefits />
+      <Entries />
       <Voting />
       <ShareCTA />
       <Footer />
