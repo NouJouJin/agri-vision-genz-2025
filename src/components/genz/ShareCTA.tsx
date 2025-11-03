@@ -12,8 +12,7 @@ export default function ShareCTA() {
     '🌾 AGRI VISION for Gen Z 投票キャンペーン\n\n投票で豪華特典GET！\n✅ 参加証明NFT\n✅ AIセミナー無料参加\n✅ 抽選で新米5kg\n\nあなたの一票で、日本の農業の未来を変えよう！\n\n#AGRIVISIONforGenZ #農業 #生成AI'
   );
 
-  // URLは後でデプロイ先のURLに変更してください
-  const shareUrl = encodeURIComponent('https://example.com/genz-campaign');
+  const shareUrl = encodeURIComponent('https://agrivision-genz-2025.metagri-labo.com/genz-campaign');
 
   const handleTwitterShare = () => {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`;
