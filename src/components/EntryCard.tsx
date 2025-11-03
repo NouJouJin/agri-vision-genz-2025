@@ -13,7 +13,7 @@ interface EntryCardProps {
 
 export default function EntryCard({ entry, onClick, index }: EntryCardProps) {
   const videoId = extractYouTubeVideoId(entry.youtubeUrl);
-  const thumbnailUrl = videoId ? getYouTubeThumbnail(videoId) : '/placeholder.jpg';
+  const thumbnailUrl = entry.thumbnail || (videoId ? getYouTubeThumbnail(videoId) : '/placeholder.jpg');
 
   return (
     <motion.div
