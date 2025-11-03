@@ -24,7 +24,7 @@ export default function Voting() {
               あなたのお気に入り作品に投票してください
             </p>
             <p className="text-gray-400 text-sm max-w-2xl mx-auto">
-              全9作品の中から、最も印象に残った作品を選んでください。<br />
+              全13作品の中から、最も印象に残った作品を選んでください。<br />
               あなたの一票が、クリエイターの励みになります！
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-emerald-500 mx-auto mt-6"></div>
