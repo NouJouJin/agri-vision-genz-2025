@@ -1,4 +1,4 @@
-import GenZKV from '@/components/genz/GenZKV';
+import GenZHero from '@/components/genz/GenZHero';
 import VoteBenefits from '@/components/genz/VoteBenefits';
 import Entries from '@/components/Entries';
 import Voting from '@/components/Voting';
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 export default function GenZCampaignPage() {
   return (
     <main className="min-h-screen">
-      <GenZKV />
+      <GenZHero />
       <VoteBenefits />
       <Entries />
       <Voting />
