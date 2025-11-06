@@ -3,7 +3,15 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-export default function Voting() {
+interface VotingProps {
+  formUrl?: string;
+  showDeadline?: boolean;
+}
+
+export default function Voting({
+  formUrl = "https://airtable.com/embed/applcqOMmwyE9fjtX/pag7tefz36UiQ7ZPB/form",
+  showDeadline = true
+}: VotingProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
@@ -27,6 +35,21 @@ export default function Voting() {
               全13作品の中から、最も印象に残った作品を選んでください。<br />
               あなたの一票が、クリエイターの励みになります！
             </p>
+            {showDeadline && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-400/40 rounded-full"
+              >
+                <svg className="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="text-red-300 font-bold text-sm sm:text-base">
+                  投票締め切り: 2025年11月14日（金）23:59
+                </span>
+              </motion.div>
+            )}
             <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-emerald-500 mx-auto mt-6"></div>
           </div>
 
@@ -41,7 +64,7 @@ export default function Voting() {
               <div className="relative w-full" style={{ paddingBottom: '56.25%', minHeight: '533px' }}>
                 <iframe
                   className="absolute top-0 left-0 w-full h-full rounded-2xl"
-                  src="https://airtable.com/embed/applcqOMmwyE9fjtX/pagV9Be9LTXkw6iQT/form"
+                  src={formUrl}
                   frameBorder="0"
                   style={{
                     background: 'transparent',
