@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   description: "第2回動画生成AIコンテスト『AGRI VISION for Gen Z』- Z世代が描く農業の未来",
   keywords: ["農業", "AI", "動画生成", "コンテスト", "Gen Z", "生成AI"],
   authors: [{ name: "AGRI VISION運営事務局" }],
+  icons: {
+    icon: [
+      {
+        url: "https://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png",
+        type: "image/png",
+      },
+    ],
+    apple: "https://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png",
+    shortcut: "https://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png",
+  },
   openGraph: {
     title: "AGRI VISION for Gen Z | 動画生成AIコンテスト",
     description: "第2回動画生成AIコンテスト『AGRI VISION for Gen Z』- Z世代が描く農業の未来",
