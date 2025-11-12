@@ -10,6 +10,7 @@ export interface Award {
   gradient: string;
   entry: Entry;
   evaluationPoints?: string[]; // 評価ポイント（後で編集可能）
+  formUrl?: string; // 特典受け取りフォームURL（受賞者用）
 }
 
 /**
@@ -32,6 +33,7 @@ export const awards: Award[] = [
       // 例: 'Z世代の視点から農業との出会いを描いた点',
       // 例: 'アニメーションスタイルとコンセプトへのこだわり',
     ],
+    formUrl: '', // ここに特典受け取りフォームURLを追記してください
   },
   {
     category: 'Metagri特別賞',
@@ -40,10 +42,11 @@ export const awards: Award[] = [
     description: 'メタグリラボ特別賞',
     icon: '✨',
     gradient: 'from-purple-400 via-pink-500 to-purple-600',
-    entry: entries.find(e => e.id === 8)!,
+    entry: entries.find(e => e.id === 1)!,
     evaluationPoints: [
       // ここに評価ポイントを追記してください
     ],
+    formUrl: '', // ここに特典受け取りフォームURLを追記してください
   },
   {
     category: '農情人賞',
@@ -56,6 +59,7 @@ export const awards: Award[] = [
     evaluationPoints: [
       // ここに評価ポイントを追記してください
     ],
+    formUrl: 'https://airtable.com/applcqOMmwyE9fjtX/pagdlN6RJDmtBZB7e/form',
   },
   {
     category: '農情人賞',
@@ -68,5 +72,6 @@ export const awards: Award[] = [
     evaluationPoints: [
       // ここに評価ポイントを追記してください
     ],
+    formUrl: 'https://airtable.com/applcqOMmwyE9fjtX/pagdlN6RJDmtBZB7e/form',
   },
 ];

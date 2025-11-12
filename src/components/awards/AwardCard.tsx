@@ -173,6 +173,30 @@ export default function AwardCard({ award, index }: AwardCardProps) {
                   {award.entry.message}
                 </p>
               </div>
+
+              {/* Award Form Button */}
+              {award.formUrl && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.6, delay: index * 0.2 + 0.8 }}
+                  className="pt-6"
+                >
+                  <a
+                    href={award.formUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`block w-full py-4 px-6 bg-gradient-to-r ${award.gradient} rounded-2xl text-white font-bold text-center shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105`}
+                  >
+                    <span className="flex items-center justify-center gap-2">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                      </svg>
+                      特典の受け取り申請フォーム
+                    </span>
+                  </a>
+                </motion.div>
+              )}
             </motion.div>
           </div>
         </div>
