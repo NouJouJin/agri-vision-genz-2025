@@ -28,7 +28,7 @@ export const awards: Award[] = [
     gradient: 'from-yellow-400 via-amber-500 to-yellow-600',
     entry: entries.find(e => e.id === 4)!,
     commentary: 'この作品が持つ最大の魅力は、「世界を変えるのは、特別なヒーローではなく"普通の人の小さな行動"である」という、Z世代が最も共感する価値観を、リアルで温かい物語として描いた点です。SNSで誰かの挑戦を見て、自分の中にも「何かできるかもしれない」という火が灯る——。その"伝播する勇気"の連鎖を、農業という分野にて表現しています。農業を「働くこと」から「生きること・つながること」へつなげていく。"一人の行動が未来を変える"という希望を表現した作品として、グランプリに選出されました。',
-    formUrl: '', // ここに特典受け取りフォームURLを追記してください
+    formUrl: 'https://airtable.com/applcqOMmwyE9fjtX/pagw1uYbabmNTVBHp/form',
   },
   {
     category: '準グランプリ',
@@ -39,7 +39,7 @@ export const awards: Award[] = [
     gradient: 'from-slate-300 via-slate-400 to-slate-500',
     entry: entries.find(e => e.id === 7)!,
     commentary: '自然と人間の関係を"毛虫の視点"から描くという、常識を鮮やかにひっくり返す発想が光る作品です。毛虫＝害虫という固定観念を揺さぶり、「彼らは自然の掃除屋であり、生態系の一員である」という新しい理解を促す。農業を"制御の対象"ではなく"共生のパートナー"として捉える思想は、極めて現代的で革新的。発想力と哲学性の高さが評価され、準グランプリに輝きました。年代問わず楽しめる作品です。',
-    formUrl: '', // ここに特典受け取りフォームURLを追記してください
+    formUrl: 'https://airtable.com/applcqOMmwyE9fjtX/paggcG8Ts4a6cV43x/form',
   },
   {
     category: 'Metagri特別賞',
@@ -50,7 +50,7 @@ export const awards: Award[] = [
     gradient: 'from-purple-400 via-pink-500 to-purple-600',
     entry: entries.find(e => e.id === 1)!,
     commentary: 'この作品は、農業における最も普遍的なテーマ——「経験と勘」×「データとAI」という対立と融合を、ドラマティックな物語として映画のような世界観で描き切っていただきました。動画の時間は2分とショート動画としては比較的長編でしたが、Metagri研究所のコミュニティ内で高く評価されました。ベテラン農家の"身体知"と、若い研究者の"データ解釈"。そのぶつかり合いと理解の過程は、まさに今の農業現場で起きているリアルなテーマでもあります。AIは伝統を奪う敵ではなく、その魂を「翻訳」し、未来へつなぐパートナーである。この視点はMetagri研究所の理念そのものです。',
-    formUrl: '', // ここに特典受け取りフォームURLを追記してください
+    formUrl: 'https://airtable.com/applcqOMmwyE9fjtX/pagPOMD02DQ7CDoAr/form',
   },
   {
     category: '農情人賞',
