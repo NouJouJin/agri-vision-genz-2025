@@ -46,7 +46,7 @@ export default function GenZCampaignPage() {
       <GenZHero />
       <VoteBenefits />
       <Entries />
-      <Voting formUrl="https://airtable.com/embed/applcqOMmwyE9fjtX/pagV9Be9LTXkw6iQT/form" />
+      <Voting formUrl="https://airtable.com/embed/applcqOMmwyE9fjtX/pagV9Be9LTXkw6iQT/form" isClosed={true} />
       <ShareCTA />
       <Footer />
     </main>
