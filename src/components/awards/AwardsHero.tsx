@@ -152,6 +152,7 @@ export default function AwardsHero() {
         >
           {[
             { icon: '👑', label: 'グランプリ', color: 'from-yellow-400 to-amber-600' },
+            { icon: '🌟', label: '準グランプリ', color: 'from-slate-300 to-slate-500' },
             { icon: '✨', label: 'Metagri特別賞', color: 'from-purple-400 to-pink-600' },
             { icon: '💚', label: '農情人賞', color: 'from-green-400 to-emerald-600' },
           ].map((category, index) => (
