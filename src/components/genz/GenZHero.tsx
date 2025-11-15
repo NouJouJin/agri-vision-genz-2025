@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function GenZHero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -85,22 +86,29 @@ export default function GenZHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* ライブステータスバッジ */}
+          {/* 投票締切バッジ */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-3 px-8 py-4 mb-8 rounded-full backdrop-blur-xl bg-gradient-to-r from-emerald-500/20 via-teal-500/20 to-cyan-500/20 border border-emerald-400/40 shadow-lg shadow-emerald-500/20"
+            className="inline-flex items-center gap-3 px-8 py-4 mb-8 rounded-full backdrop-blur-xl bg-gradient-to-r from-yellow-500/20 via-amber-500/20 to-orange-500/20 border border-yellow-400/40 shadow-lg shadow-yellow-500/20"
           >
-            <span className="relative flex h-4 w-4">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-4 w-4 bg-gradient-to-r from-emerald-400 to-teal-400 shadow-lg shadow-emerald-400/50"></span>
-            </span>
-            <span className="text-emerald-100 font-bold text-base sm:text-lg tracking-wide">VOTING NOW LIVE</span>
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
-              className="w-5 h-5 border-2 border-emerald-400 border-t-transparent rounded-full"
+            <span className="text-4xl">🏆</span>
+            <span className="text-yellow-100 font-bold text-base sm:text-lg tracking-wide">投票締切 - 結果発表</span>
+          </motion.div>
+
+          {/* KV画像 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mb-12 rounded-3xl overflow-hidden shadow-2xl max-w-4xl mx-auto border-4 border-emerald-400/30"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="http://metagri-labo.com/wp-content/uploads/2025/11/88725afb02f5d4e5475d3ae2dcca3398.png"
+              alt="AGRI VISION for Gen Z - 結果発表"
+              className="w-full h-auto"
             />
           </motion.div>
 
@@ -108,10 +116,10 @@ export default function GenZHero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="mb-6"
           >
-            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-4">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-4">
               <motion.span
                 className="block mb-3 bg-gradient-to-r from-white via-emerald-100 to-white bg-clip-text text-transparent"
                 animate={{
@@ -126,10 +134,10 @@ export default function GenZHero() {
                   backgroundSize: '200% auto',
                 }}
               >
-                投票で
+                結果発表
               </motion.span>
               <motion.span
-                className="block bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent relative"
+                className="block bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-400 bg-clip-text text-transparent relative"
                 animate={{
                   backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
                 }}
@@ -140,10 +148,10 @@ export default function GenZHero() {
                 }}
                 style={{
                   backgroundSize: '200% auto',
-                  textShadow: '0 0 80px rgba(52, 211, 153, 0.5)',
+                  textShadow: '0 0 80px rgba(251, 191, 36, 0.5)',
                 }}
               >
-                豪華特典GET
+                受賞者決定！
                 <motion.span
                   className="absolute -top-4 -right-4 text-4xl"
                   animate={{
@@ -156,7 +164,7 @@ export default function GenZHero() {
                     ease: 'easeInOut',
                   }}
                 >
-                  ✨
+                  🎉
                 </motion.span>
               </motion.span>
             </h1>
@@ -167,7 +175,7 @@ export default function GenZHero() {
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
           >
             <span className="bg-gradient-to-r from-emerald-300 to-teal-300 bg-clip-text text-transparent">
               AGRI VISION
@@ -179,63 +187,30 @@ export default function GenZHero() {
             className="text-lg sm:text-xl md:text-2xl text-emerald-100 mb-12 max-w-3xl mx-auto font-medium leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
           >
-            あなたの一票で、日本の農業の未来を変える。
+            たくさんの投票、ありがとうございました！
             <br />
-            <span className="text-teal-300 font-bold">投票した全員</span>に限定特典をプレゼント！
+            <span className="text-teal-300 font-bold">グランプリ・準グランプリ・特別賞</span>が決定しました。
           </motion.p>
-
-          {/* 特典カード */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-5xl mx-auto mb-12"
-          >
-            {[
-              { icon: '🎫', title: '参加証明NFT', color: 'from-emerald-500 to-teal-600' },
-              { icon: '🎓', title: 'AIセミナー無料', color: 'from-teal-500 to-cyan-600' },
-              { icon: '🌾', title: '抽選で新米5kg', color: 'from-cyan-500 to-blue-600' },
-            ].map((benefit, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05, y: -5 }}
-                transition={{ duration: 0.2 }}
-                className="group relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl -z-10"
-                  style={{
-                    background: `linear-gradient(to right, var(--tw-gradient-stops))`,
-                    '--tw-gradient-from': benefit.color.split(' ')[1],
-                    '--tw-gradient-to': benefit.color.split(' ')[3],
-                  } as any}
-                />
-                <div className={`backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300`}>
-                  <div className="text-5xl mb-3">{benefit.icon}</div>
-                  <h3 className="text-white font-bold text-lg">{benefit.title}</h3>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
 
           {/* CTAボタン */}
           <motion.div
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.1 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
           >
             <motion.a
-              href="#voting"
+              href="/awards"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="group relative px-12 py-5 overflow-hidden rounded-full"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-500 animate-gradient-x" />
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 animate-gradient-x" />
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-amber-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative flex items-center gap-3 text-white font-black text-xl tracking-wide">
-                今すぐ投票する
+                受賞結果を見る
                 <motion.svg
                   className="w-6 h-6"
                   fill="none"
@@ -250,12 +225,12 @@ export default function GenZHero() {
             </motion.a>
 
             <motion.a
-              href="#benefits"
+              href="#entries"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-12 py-5 backdrop-blur-xl bg-white/10 text-white font-bold text-xl rounded-full border-2 border-white/30 hover:bg-white/20 hover:border-emerald-400/50 transition-all duration-300 shadow-lg"
+              className="px-12 py-5 backdrop-blur-xl bg-white/10 text-white font-bold text-xl rounded-full border-2 border-white/30 hover:bg-white/20 hover:border-yellow-400/50 transition-all duration-300 shadow-lg"
             >
-              特典を詳しく見る
+              全作品を見る
             </motion.a>
           </motion.div>
         </motion.div>
@@ -267,7 +242,7 @@ export default function GenZHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 0.8,
-            delay: 1.3,
+            delay: 1.4,
             repeat: Infinity,
             repeatType: 'reverse',
           }}
