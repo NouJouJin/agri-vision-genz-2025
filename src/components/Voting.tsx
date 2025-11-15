@@ -6,11 +6,13 @@ import { useRef } from 'react';
 interface VotingProps {
   formUrl?: string;
   showDeadline?: boolean;
+  isClosed?: boolean;
 }
 
 export default function Voting({
   formUrl = "https://airtable.com/embed/applcqOMmwyE9fjtX/pag7tefz36UiQ7ZPB/form",
-  showDeadline = true
+  showDeadline = true,
+  isClosed = false
 }: VotingProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
@@ -53,38 +55,64 @@ export default function Voting({
             <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-emerald-500 mx-auto mt-6"></div>
           </div>
 
-          {/* 投票フォーム埋め込み */}
+          {/* 投票フォーム埋め込み or 締め切りメッセージ */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-4xl mx-auto"
           >
-            <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-4 sm:p-8 border border-white/10 shadow-xl">
-              <div className="relative w-full" style={{ paddingBottom: '56.25%', minHeight: '533px' }}>
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full rounded-2xl"
-                  src={formUrl}
-                  frameBorder="0"
-                  style={{
-                    background: 'transparent',
-                    border: '1px solid rgba(255, 255, 255, 0.1)',
-                    minHeight: '533px',
-                  }}
-                  title="AGRI VISION for Gen Z 投票フォーム"
-                />
+            {isClosed ? (
+              // 投票締め切りメッセージ
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-12 border border-white/10 shadow-2xl text-center">
+                <div className="mb-6">
+                  <svg className="w-20 h-20 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-3xl font-bold text-white mb-4">
+                  投票は締め切りました
+                </h3>
+                <p className="text-gray-300 text-lg mb-6">
+                  たくさんのご投票、誠にありがとうございました。<br />
+                  受賞作品の発表をお楽しみに！
+                </p>
+                <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-400/40 rounded-full">
+                  <span className="text-amber-300 font-bold">
+                    投票期間: 2025年11月14日（金）23:59 まで
+                  </span>
+                </div>
               </div>
-            </div>
+            ) : (
+              // 投票フォーム
+              <>
+                <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-4 sm:p-8 border border-white/10 shadow-xl">
+                  <div className="relative w-full" style={{ paddingBottom: '56.25%', minHeight: '533px' }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full rounded-2xl"
+                      src={formUrl}
+                      frameBorder="0"
+                      style={{
+                        background: 'transparent',
+                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                        minHeight: '533px',
+                      }}
+                      title="AGRI VISION for Gen Z 投票フォーム"
+                    />
+                  </div>
+                </div>
 
-            {/* 注意事項 */}
-            <div className="mt-8 text-center">
-              <div className="inline-flex items-center gap-2 text-gray-400 text-sm bg-white/5 px-6 py-3 rounded-full border border-white/10">
-                <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>投票は1回のみ有効です。慎重にお選びください。</span>
-              </div>
-            </div>
+                {/* 注意事項 */}
+                <div className="mt-8 text-center">
+                  <div className="inline-flex items-center gap-2 text-gray-400 text-sm bg-white/5 px-6 py-3 rounded-full border border-white/10">
+                    <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>投票は1回のみ有効です。慎重にお選びください。</span>
+                  </div>
+                </div>
+              </>
+            )}
           </motion.div>
 
           {/* CTAセクション */}
