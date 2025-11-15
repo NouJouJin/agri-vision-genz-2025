@@ -205,26 +205,6 @@ export default function AwardCard({ award, index }: AwardCardProps) {
                   </a>
                 </motion.div>
               )}
-
-              {/* View All Works Button */}
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.2 + 0.9 }}
-                className="pt-2"
-              >
-                <a
-                  href="/genz-campaign#entries"
-                  className="block w-full py-3 px-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl text-white font-medium text-center hover:bg-white/20 transition-all duration-300 hover:scale-105"
-                >
-                  <span className="flex items-center justify-center gap-2">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                    </svg>
-                    他の作品を見る
-                  </span>
-                </a>
-              </motion.div>
             </motion.div>
           </div>
         </div>
