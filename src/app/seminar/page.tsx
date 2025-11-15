@@ -46,7 +46,7 @@ export default function SeminarPage() {
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-300 mb-4">
             都会じゃなくても、資本がなくても<br className="md:hidden" />
-            <span className="text-emerald-400 font-bold">"武器"を持てる時代へ</span>
+            <span className="text-emerald-400 font-bold">「武器」を持てる時代へ</span>
           </p>
 
           <p className="text-lg md:text-xl text-gray-400 mb-12">

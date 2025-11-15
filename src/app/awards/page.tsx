@@ -47,9 +47,10 @@ export default function AwardsPage() {
             <div className="relative z-10">
               {/* Key Visual Placeholder - キービジュアルは後で挿入 */}
               <div className="mb-8 rounded-2xl overflow-hidden bg-slate-800/50 border border-white/10">
-  <img 
-    src="http://metagri-labo.com/wp-content/uploads/2025/10/03f293037a8b54f66dbbf1df0e9a958f.png" 
-    alt="AGRI VISION for Gen Z コンテスト" 
+  {/* eslint-disable-next-line @next/next/no-img-element */}
+  <img
+    src="http://metagri-labo.com/wp-content/uploads/2025/10/03f293037a8b54f66dbbf1df0e9a958f.png"
+    alt="AGRI VISION for Gen Z コンテスト"
     className="w-full h-full object-cover"
   />
 </div>
