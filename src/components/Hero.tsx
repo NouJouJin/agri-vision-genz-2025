@@ -19,11 +19,24 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          {/* 結果発表バッジ */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="inline-flex items-center gap-3 px-8 py-4 mb-8 rounded-full backdrop-blur-xl bg-gradient-to-r from-yellow-500/20 via-amber-500/20 to-orange-500/20 border border-yellow-400/40 shadow-lg shadow-yellow-500/20"
+          >
+            <span className="text-4xl">🏆</span>
+            <span className="text-yellow-100 font-bold text-base sm:text-lg tracking-wide">
+              投票締切 - 結果発表
+            </span>
+          </motion.div>
+
           <motion.h1
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
             <span className="block mb-2">AGRI VISION</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 neon-glow">
@@ -40,13 +53,28 @@ export default function Hero() {
             第2回 動画生成AIコンテスト
           </motion.p>
 
+          {/* KV画像 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="mb-12 rounded-3xl overflow-hidden shadow-2xl max-w-4xl mx-auto border-4 border-yellow-400/30"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="http://metagri-labo.com/wp-content/uploads/2025/11/88725afb02f5d4e5475d3ae2dcca3398.png"
+              alt="AGRI VISION for Gen Z - 結果発表"
+              className="w-full h-auto"
+            />
+          </motion.div>
+
           <motion.p
             className="text-base sm:text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Z世代が生成AIで描く、農業の新しい未来
+            たくさんの投票、ありがとうございました！
           </motion.p>
 
           <motion.div
@@ -56,16 +84,16 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <a
-              href="#entries"
-              className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold text-lg rounded-full hover:from-green-600 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-green-500/50 hover:scale-105"
+              href="/awards"
+              className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-600 text-white font-bold text-lg rounded-full hover:from-yellow-600 hover:to-amber-700 transition-all duration-300 shadow-lg hover:shadow-yellow-500/50 hover:scale-105"
             >
-              作品を見る
+              🏆 受賞結果を見る
             </a>
             <a
-              href="#about"
+              href="#entries"
               className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-bold text-lg rounded-full border-2 border-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105"
             >
-              コンテストについて
+              全作品を見る
             </a>
           </motion.div>
         </motion.div>
