@@ -47,16 +47,12 @@ export default function AwardsPage() {
             <div className="relative z-10">
               {/* Key Visual Placeholder - キービジュアルは後で挿入 */}
               <div className="mb-8 rounded-2xl overflow-hidden bg-slate-800/50 border border-white/10">
-                <div className="aspect-video flex items-center justify-center text-gray-500">
-                  {/* キービジュアル画像をここに挿入 */}
-                  <div className="text-center">
-                    <svg className="w-24 h-24 mx-auto mb-4 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <p className="text-sm">キービジュアル</p>
-                  </div>
-                </div>
-              </div>
+  <img 
+    src="http://metagri-labo.com/wp-content/uploads/2025/10/03f293037a8b54f66dbbf1df0e9a958f.png" 
+    alt="AGRI VISION for Gen Z コンテスト" 
+    className="w-full h-full object-cover"
+  />
+</div>
 
               {/* Title */}
               <div className="text-center mb-8">
