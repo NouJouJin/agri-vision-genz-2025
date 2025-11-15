@@ -1,22 +1,8 @@
 'use client';
 
 import Footer from '@/components/Footer';
-import { useState } from 'react';
 
 export default function SeminarPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    occupation: '',
-    interest: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Peatixなどの外部申し込みフォームへのリダイレクト処理をここに追加
-    alert('申し込みフォームへの遷移機能は、Peatixなどのイベント管理システムと連携してください。');
-  };
-
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900">
       {/* Hero Section */}
@@ -56,36 +42,22 @@ export default function SeminarPage() {
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
             <a
-              href="#apply"
-              className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 hover:scale-105"
-            >
-              <span>今すぐ申し込む</span>
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-
-            <a
               href="#details"
-              className="inline-flex items-center gap-2 px-10 py-5 bg-white/10 backdrop-blur-sm text-white font-bold text-lg rounded-2xl border-2 border-white/20 hover:bg-white/20 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-10 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 hover:scale-105"
             >
               詳細を見る
             </a>
           </div>
 
           {/* Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16 max-w-2xl mx-auto">
             <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10">
-              <div className="text-emerald-400 text-3xl font-black mb-2">500円</div>
-              <div className="text-gray-300 text-sm">参加費（早割300円）</div>
+              <div className="text-cyan-400 text-3xl font-black mb-2">50分</div>
+              <div className="text-gray-300 text-sm">コンパクトな学びの時間</div>
             </div>
             <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10">
-              <div className="text-cyan-400 text-3xl font-black mb-2">60分</div>
-              <div className="text-gray-300 text-sm">オンライン（Zoom）</div>
-            </div>
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10">
-              <div className="text-purple-400 text-3xl font-black mb-2">限定50名</div>
-              <div className="text-gray-300 text-sm">先着順</div>
+              <div className="text-emerald-400 text-3xl font-black mb-2">オンライン</div>
+              <div className="text-gray-300 text-sm">Zoom開催（全国どこからでも）</div>
             </div>
           </div>
         </div>
@@ -241,31 +213,31 @@ export default function SeminarPage() {
               {
                 time: '0:05 - 0:15',
                 title: 'AI時代、地方・一次産業・個人でも"勝ち筋"を持てる理由',
-                description: 'AIがもたらす「個人・地方の武器化」。大企業が手を出しづらい「ニッチ×ローカル」こそAIと相性が良い理由。',
+                description: 'AIがもたらす「個人・地方の武器化」。大企業が手を出しづらい「ニッチ×ローカル」こそAIと相性が良い理由。AGRI VISION for Gen Zコンテストの意義と、AI×ローカル×一次産業の可能性。',
                 color: 'from-emerald-500 to-emerald-600'
               },
               {
-                time: '0:15 - 0:35',
+                time: '0:15 - 0:30',
                 title: 'ケーススタディ①：「LOCAL HEROES NEXT」',
-                description: '普通の若者×ローカル×AIが社会を動かす。グランプリ受賞者が語る制作の裏側と、AI×ローカルの可能性。',
+                description: '普通の若者×ローカル×AIが社会を動かす。グランプリ受賞者が語る制作の裏側と、AI×ローカルの可能性。小さなチームでもここまでできる制作プロセスを公開。',
                 color: 'from-cyan-500 to-cyan-600',
                 speaker: 'Shinpei Kojima'
               },
               {
-                time: '0:35 - 0:55',
+                time: '0:30 - 0:45',
                 title: 'ケーススタディ②：「アグリ☆ビート」',
-                description: '推し文化×農業×AIでエンタメに変換する。Sora2がもたらした表現のジャンプと、ローカルクリエイターへのエール。',
+                description: '推し文化×農業×AIでエンタメに変換する。Sora2がもたらした表現のジャンプと、ローカルクリエイターへのエール。エンタメ経由で一次産業とつながる未来像。',
                 color: 'from-pink-500 to-purple-600',
                 speaker: '大森研一'
               },
               {
-                time: '0:55 - 1:00',
-                title: '対談：AI時代のローカルキャリア戦略',
-                description: '登壇者2名によるクロストーク。「地方でAI片手に自分のプロジェクト」という選択肢について。',
+                time: '0:45 - 0:50',
+                title: 'Q&A・質疑応答',
+                description: '参加者からの質問に登壇者が回答。AI×ローカル×一次産業に関する疑問を解消します。',
                 color: 'from-yellow-500 to-amber-600'
               },
               {
-                time: '1:00 - 1:05',
+                time: '0:50 - 0:55',
                 title: 'クロージング & 次のアクション',
                 description: '今日のまとめと、次回コンテストの案内。Metagriコミュニティへの参加呼びかけ。',
                 color: 'from-slate-500 to-slate-600'
@@ -350,146 +322,6 @@ export default function SeminarPage() {
         </div>
       </section>
 
-      {/* Application Section */}
-      <section id="apply" className="py-20 px-6 bg-gradient-to-b from-slate-900 to-emerald-950">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-12 border border-white/10 shadow-2xl">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 mb-6">
-                セミナー申し込み
-              </h2>
-              <p className="text-gray-300 text-lg mb-4">
-                参加費：<span className="text-emerald-400 font-bold text-2xl">500円</span>
-                <span className="ml-4 text-sm text-gray-400">（早割：先着20名 300円）</span>
-              </p>
-              <p className="text-gray-400">
-                定員：50名（先着順）
-              </p>
-            </div>
-
-            {/* Benefits */}
-            <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-6 mb-8">
-              <h3 className="text-xl font-bold text-emerald-400 mb-4">参加特典</h3>
-              <ul className="space-y-2 text-gray-300">
-                <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>録画アーカイブ視聴権（期間限定）</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>セミナー資料ダウンロード</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>AIツール一覧・参考リンク集（PDF）</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>次回コンテストの先行案内</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Metagriコミュニティ優先招待</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Application Form */}
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-300 mb-2">
-                  お名前 *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  required
-                  className="w-full px-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors"
-                  placeholder="山田 太郎"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-300 mb-2">
-                  メールアドレス *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  className="w-full px-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors"
-                  placeholder="example@email.com"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                />
-              </div>
-
-              <div>
-                <label htmlFor="occupation" className="block text-sm font-semibold text-gray-300 mb-2">
-                  職業・立場 *
-                </label>
-                <select
-                  id="occupation"
-                  required
-                  className="w-full px-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white focus:outline-none focus:border-emerald-500 transition-colors"
-                  value={formData.occupation}
-                  onChange={(e) => setFormData({ ...formData, occupation: e.target.value })}
-                >
-                  <option value="">選択してください</option>
-                  <option value="student">学生</option>
-                  <option value="creator">クリエイター</option>
-                  <option value="agriculture">農業関係者</option>
-                  <option value="local">地方自治体・地域おこし</option>
-                  <option value="marketing">マーケティング・広報</option>
-                  <option value="engineer">エンジニア・技術者</option>
-                  <option value="other">その他</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="interest" className="block text-sm font-semibold text-gray-300 mb-2">
-                  参加の動機・興味のあるテーマ
-                </label>
-                <textarea
-                  id="interest"
-                  rows={4}
-                  className="w-full px-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors resize-none"
-                  placeholder="このセミナーに期待することや、興味のあるテーマをお聞かせください"
-                  value={formData.interest}
-                  onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 hover:scale-105"
-              >
-                <span>申し込む（Peatixへ移動）</span>
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-
-              <p className="text-sm text-gray-400 text-center">
-                ※ 実際の決済・申し込みはPeatixのイベントページで行います
-              </p>
-            </form>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="py-20 px-6 bg-slate-950">
         <div className="max-w-4xl mx-auto">
@@ -543,18 +375,9 @@ export default function SeminarPage() {
             あなたの『AI×◯◯』を、<br />
             ぜひ形にしてください
           </h2>
-          <p className="text-xl text-gray-300 mb-12">
+          <p className="text-xl text-gray-300">
             このセミナーが、新しい一歩を踏み出すきっかけになれば幸いです
           </p>
-          <a
-            href="#apply"
-            className="group relative inline-flex items-center gap-3 px-12 py-6 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold text-xl rounded-2xl shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <span>今すぐ申し込む</span>
-            <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
         </div>
       </section>
 
