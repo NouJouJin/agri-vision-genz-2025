@@ -52,8 +52,8 @@ export default function SeminarPage() {
           {/* Info Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16 max-w-2xl mx-auto">
             <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10">
-              <div className="text-cyan-400 text-3xl font-black mb-2">50分</div>
-              <div className="text-gray-300 text-sm">コンパクトな学びの時間</div>
+              <div className="text-cyan-400 text-3xl font-black mb-2">60分</div>
+              <div className="text-gray-300 text-sm">充実した学びの時間</div>
             </div>
             <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10">
               <div className="text-emerald-400 text-3xl font-black mb-2">オンライン</div>
@@ -217,27 +217,21 @@ export default function SeminarPage() {
                 color: 'from-emerald-500 to-emerald-600'
               },
               {
-                time: '0:15 - 0:30',
+                time: '0:15 - 0:35',
                 title: 'ケーススタディ①：「LOCAL HEROES NEXT」',
-                description: '普通の若者×ローカル×AIが社会を動かす。グランプリ受賞者が語る制作の裏側と、AI×ローカルの可能性。小さなチームでもここまでできる制作プロセスを公開。',
+                description: '普通の若者×ローカル×AIが社会を動かす。グランプリ受賞者が語る制作の裏側（15分）と、AI×ローカルの可能性。その後、参加者からの質問に回答（5分）。',
                 color: 'from-cyan-500 to-cyan-600',
                 speaker: 'Shinpei Kojima'
               },
               {
-                time: '0:30 - 0:45',
+                time: '0:35 - 0:55',
                 title: 'ケーススタディ②：「アグリ☆ビート」',
-                description: '推し文化×農業×AIでエンタメに変換する。Sora2がもたらした表現のジャンプと、ローカルクリエイターへのエール。エンタメ経由で一次産業とつながる未来像。',
+                description: '推し文化×農業×AIでエンタメに変換する。Sora2がもたらした表現のジャンプと、ローカルクリエイターへのエール（15分）。その後、参加者からの質問に回答（5分）。',
                 color: 'from-pink-500 to-purple-600',
                 speaker: '大森研一'
               },
               {
-                time: '0:45 - 0:50',
-                title: 'Q&A・質疑応答',
-                description: '参加者からの質問に登壇者が回答。AI×ローカル×一次産業に関する疑問を解消します。',
-                color: 'from-yellow-500 to-amber-600'
-              },
-              {
-                time: '0:50 - 0:55',
+                time: '0:55 - 1:00',
                 title: 'クロージング & 次のアクション',
                 description: '今日のまとめと、次回コンテストの案内。Metagriコミュニティへの参加呼びかけ。',
                 color: 'from-slate-500 to-slate-600'
