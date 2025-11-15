@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <Entries />
-      <Voting />
+      <Voting isClosed={true} />
       <Footer />
     </main>
   );

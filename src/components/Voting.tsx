@@ -66,18 +66,24 @@ export default function Voting({
               // 投票締め切りメッセージ
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-12 border border-white/10 shadow-2xl text-center">
                 <div className="mb-6">
-                  <svg className="w-20 h-20 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg className="w-20 h-20 mx-auto text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-4">
                   投票は締め切りました
                 </h3>
-                <p className="text-gray-300 text-lg mb-6">
+                <p className="text-gray-300 text-lg mb-8">
                   たくさんのご投票、誠にありがとうございました。<br />
-                  受賞作品の発表をお楽しみに！
+                  受賞作品が決定しました！
                 </p>
-                <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-400/40 rounded-full">
+                <a
+                  href="/awards"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-600 text-white font-bold text-lg rounded-full hover:from-yellow-600 hover:to-amber-700 transition-all duration-300 shadow-lg hover:shadow-yellow-500/50 hover:scale-105"
+                >
+                  🏆 受賞結果を見る
+                </a>
+                <div className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-400/40 rounded-full">
                   <span className="text-amber-300 font-bold">
                     投票期間: 2025年11月14日（金）23:59 まで
                   </span>
