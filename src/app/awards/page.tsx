@@ -68,7 +68,7 @@ export default function AwardsPage() {
               {/* CTA Button */}
               <div className="flex justify-center">
                 <a
-                  href="/genz-campaign#entries"
+                  href="https://agrivision-genz-2025.metagri-labo.com/"
                   className="group relative inline-flex items-center gap-3 px-8 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
