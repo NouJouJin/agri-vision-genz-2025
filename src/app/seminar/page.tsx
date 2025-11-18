@@ -98,7 +98,7 @@ export default function SeminarPage() {
               {
                 icon: '⚡',
                 title: '動画生成AIを"仕事に繋げる"プロセスがイメージできる',
-                description: '趣味レベル → 仕事レベルへの転換ポイント。小さなチームでも高品質コンテンツを生む制作フローを理解できます。',
+                description: '趣味レベル → 仕事レベルへの転換ポイント。個人でもAI活用で高品質の動画コンテンツを実現できる制作フローを理解できます。',
                 gradient: 'from-pink-500/20 to-pink-700/20'
               }
             ].map((item, index) => (
@@ -150,7 +150,7 @@ export default function SeminarPage() {
                 <h4 className="text-sm font-bold text-gray-400 mb-2">トークテーマ</h4>
                 <ul className="text-sm text-gray-300 space-y-1">
                   <li>• AI×ローカルで描きたい世界</li>
-                  <li>• 小さなチームでもここまでできる制作プロセス</li>
+                  <li>• 生成AIででここまでできる制作プロセス</li>
                   <li>• 地方・一次産業の未開拓の可能性</li>
                 </ul>
               </div>
@@ -341,7 +341,7 @@ export default function SeminarPage() {
               },
               {
                 q: '録画視聴はできますか？',
-                a: 'はい、参加者には期間限定で録画アーカイブを提供します。当日参加できない場合でも、後日視聴可能です。'
+                a: 'はい、有料チケット購入者には録画アーカイブを提供します。'
               },
               {
                 q: 'Metagriコミュニティとは何ですか？',
