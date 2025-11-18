@@ -4,28 +4,36 @@ import Footer from '@/components/Footer';
 
 export default function SeminarPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900">
+    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20">
-        {/* Background Animation */}
+        {/* Futuristic Grid Background */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-emerald-500/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-500" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/5 via-transparent to-cyan-500/5" />
+        </div>
+
+        {/* Enhanced Animated Glows */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-10 w-96 h-96 bg-emerald-500/30 rounded-full blur-[128px] animate-pulse" style={{ animationDuration: '4s' }} />
+          <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-cyan-400/25 rounded-full blur-[128px] animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }} />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-purple-500/15 rounded-full blur-[128px] animate-pulse" style={{ animationDuration: '5s', animationDelay: '2s' }} />
+          <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-pink-500/20 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '7s', animationDelay: '3s' }} />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto text-center">
-          {/* Label */}
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-500/10 border border-emerald-500/30 rounded-full mb-8 backdrop-blur-sm">
-            <span className="text-emerald-400 font-bold text-sm">AGRI VISION for Gen Z 受賞記念セミナー</span>
+          {/* Enhanced Label with Glow */}
+          <div className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-emerald-500/20 border border-emerald-400/50 rounded-full mb-8 backdrop-blur-md shadow-[0_0_30px_rgba(16,185,129,0.3)]">
+            <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.8)]" />
+            <span className="text-emerald-300 font-bold text-sm tracking-wider">AGRI VISION for Gen Z 受賞記念セミナー</span>
           </div>
 
-          {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-cyan-300 to-emerald-400 mb-6 leading-tight">
+          {/* Main Title with Enhanced Gradient and Glow */}
+          <h1 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-200 to-emerald-300 mb-6 leading-tight drop-shadow-[0_0_50px_rgba(16,185,129,0.5)] animate-[gradient_6s_ease_infinite]">
             AIで地方から世界へ
           </h1>
 
-          <p className="text-3xl md:text-4xl font-bold text-white mb-8">
+          <p className="text-3xl md:text-4xl font-bold text-white mb-8 drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
             一次産業×AIクリエイターの新たな未来
           </p>
 
@@ -39,38 +47,52 @@ export default function SeminarPage() {
             AI時代のローカルキャリア戦略
           </p>
 
-          {/* CTA Button */}
+          {/* Enhanced CTA Button with Glow */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
             <a
               href="#details"
-              className="inline-flex items-center gap-2 px-10 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 hover:scale-105"
+              className="group relative inline-flex items-center gap-2 px-12 py-6 bg-gradient-to-r from-emerald-500 via-cyan-500 to-emerald-500 text-white font-bold text-lg rounded-2xl shadow-[0_0_50px_rgba(16,185,129,0.4)] hover:shadow-[0_0_70px_rgba(16,185,129,0.6)] transition-all duration-300 hover:scale-105 overflow-hidden"
             >
-              詳細を見る
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-emerald-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="relative">詳細を見る</span>
+              <svg className="relative w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </a>
           </div>
 
-          {/* Info Cards */}
+          {/* Enhanced Info Cards with Glassmorphism */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16 max-w-2xl mx-auto">
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10">
-              <div className="text-cyan-400 text-3xl font-black mb-2">60分</div>
-              <div className="text-gray-300 text-sm">充実した学びの時間</div>
+            <div className="group relative bg-gradient-to-br from-cyan-500/10 via-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-8 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300 hover:scale-105 shadow-[0_0_30px_rgba(34,211,238,0.2)]">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative text-cyan-300 text-4xl font-black mb-2 drop-shadow-[0_0_20px_rgba(34,211,238,0.8)]">60分</div>
+              <div className="relative text-gray-200 text-sm font-medium">充実した学びの時間</div>
             </div>
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10">
-              <div className="text-emerald-400 text-3xl font-black mb-2">オンライン</div>
-              <div className="text-gray-300 text-sm">Zoom開催（全国どこからでも）</div>
+            <div className="group relative bg-gradient-to-br from-emerald-500/10 via-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-8 border border-emerald-400/30 hover:border-emerald-400/60 transition-all duration-300 hover:scale-105 shadow-[0_0_30px_rgba(16,185,129,0.2)]">
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative text-emerald-300 text-4xl font-black mb-2 drop-shadow-[0_0_20px_rgba(16,185,129,0.8)]">オンライン</div>
+              <div className="relative text-gray-200 text-sm font-medium">Zoom開催（全国どこからでも）</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What You'll Learn Section */}
-      <section id="details" className="py-20 px-6 bg-gradient-to-b from-slate-900 to-slate-950">
-        <div className="max-w-6xl mx-auto">
+      {/* What You'll Learn Section with Enhanced Design */}
+      <section id="details" className="relative py-20 px-6 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.1),transparent_50%)]" />
+        </div>
+
+        <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 mb-6">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 border border-emerald-400/30 rounded-full mb-6 backdrop-blur-sm">
+              <span className="text-emerald-300 font-bold text-sm tracking-wider">LEARNING OUTCOMES</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-emerald-300 mb-6 drop-shadow-[0_0_30px_rgba(16,185,129,0.3)]">
               このセミナーで学べること
             </h2>
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-300 text-lg font-medium">
               参加者が持ち帰れる具体的な成果
             </p>
           </div>
@@ -81,108 +103,166 @@ export default function SeminarPage() {
                 icon: '🎯',
                 title: '「AI時代でも"ローカル"で戦える理由」が腹落ちする',
                 description: '東京・大企業に行かなくても、AIを使えば勝負できる理由。ニッチ×ローカルこそAIと相性が良い根拠を理解できます。',
-                gradient: 'from-emerald-500/20 to-emerald-700/20'
+                gradient: 'from-emerald-500/20 to-emerald-700/20',
+                borderColor: 'border-emerald-400/30 hover:border-emerald-400/60',
+                shadowColor: 'shadow-[0_0_40px_rgba(16,185,129,0.15)]'
               },
               {
                 icon: '💡',
                 title: 'AI×一次産業・地域の具体的な事例が分かる',
                 description: 'グランプリ受賞作品の制作プロセス、農情人賞受賞作品のエンタメ×農業戦略を詳しく学べます。',
-                gradient: 'from-cyan-500/20 to-cyan-700/20'
+                gradient: 'from-cyan-500/20 to-cyan-700/20',
+                borderColor: 'border-cyan-400/30 hover:border-cyan-400/60',
+                shadowColor: 'shadow-[0_0_40px_rgba(34,211,238,0.15)]'
               },
               {
                 icon: '🚀',
                 title: '自分の「AI×◯◯」のアイデアのタネができる',
                 description: 'ワークシート形式で自分の可能性を棚卸し。登壇者のケーススタディから応用パターンを学びます。',
-                gradient: 'from-purple-500/20 to-purple-700/20'
+                gradient: 'from-purple-500/20 to-purple-700/20',
+                borderColor: 'border-purple-400/30 hover:border-purple-400/60',
+                shadowColor: 'shadow-[0_0_40px_rgba(168,85,247,0.15)]'
               },
               {
                 icon: '⚡',
                 title: '動画生成AIを"仕事に繋げる"プロセスがイメージできる',
                 description: '趣味レベル → 仕事レベルへの転換ポイント。個人でもAI活用で高品質の動画コンテンツを実現できる制作フローを理解できます。',
-                gradient: 'from-pink-500/20 to-pink-700/20'
+                gradient: 'from-pink-500/20 to-pink-700/20',
+                borderColor: 'border-pink-400/30 hover:border-pink-400/60',
+                shadowColor: 'shadow-[0_0_40px_rgba(236,72,153,0.15)]'
               }
             ].map((item, index) => (
-              <div key={index} className={`bg-gradient-to-br ${item.gradient} backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:scale-105 transition-transform duration-300`}>
-                <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-2xl font-bold text-white mb-4">{item.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{item.description}</p>
+              <div key={index} className={`group relative bg-gradient-to-br ${item.gradient} backdrop-blur-xl rounded-3xl p-8 border ${item.borderColor} hover:scale-105 transition-all duration-300 ${item.shadowColor}`}>
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative text-5xl mb-4 drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">{item.icon}</div>
+                <h3 className="relative text-2xl font-bold text-white mb-4 leading-tight">{item.title}</h3>
+                <p className="relative text-gray-300 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Speakers Section */}
-      <section className="py-20 px-6 bg-slate-950">
-        <div className="max-w-6xl mx-auto">
+      {/* Speakers Section with Enhanced Design */}
+      <section className="relative py-20 px-6 bg-slate-950 overflow-hidden">
+        {/* Decorative Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-0 w-96 h-96 bg-yellow-500/10 rounded-full blur-[120px]" />
+          <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px]" />
+        </div>
+
+        <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-400 mb-6">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-400/30 rounded-full mb-6 backdrop-blur-sm">
+              <span className="text-yellow-300 font-bold text-sm tracking-wider">SPEAKERS</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-300 to-yellow-300 mb-6 drop-shadow-[0_0_30px_rgba(251,191,36,0.3)]">
               登壇者紹介
             </h2>
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-300 text-lg font-medium">
               AI×ローカルのロールモデルとして実践している先駆者たち
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Speaker 1 */}
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10">
-              <div className="flex items-start gap-6 mb-6">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center text-4xl font-black text-white">
+            {/* Speaker 1 - Enhanced */}
+            <div className="group relative bg-gradient-to-br from-emerald-500/10 via-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-8 border border-emerald-400/30 hover:border-emerald-400/60 transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(16,185,129,0.2)]">
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              <div className="relative flex items-start gap-6 mb-6">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-emerald-400 to-cyan-400 flex items-center justify-center text-4xl font-black text-white shadow-[0_0_30px_rgba(16,185,129,0.4)]">
                   🏆
                 </div>
-                <div>
-                  <div className="inline-block px-4 py-1 bg-yellow-500/20 border border-yellow-500/30 rounded-full mb-2">
-                    <span className="text-yellow-400 text-sm font-bold">グランプリ受賞者</span>
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-2 px-4 py-1 bg-gradient-to-r from-yellow-500/30 to-amber-500/30 border border-yellow-400/50 rounded-full mb-2 backdrop-blur-sm">
+                    <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse" />
+                    <span className="text-yellow-300 text-sm font-bold">グランプリ受賞者</span>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">Shinpei Kojima</h3>
-                  <p className="text-gray-400 text-sm">クリエイター</p>
+                  <p className="text-gray-300 text-sm font-medium">クリエイター</p>
                 </div>
               </div>
-              <div className="mb-4">
-                <h4 className="text-lg font-bold text-emerald-400 mb-2">受賞作品</h4>
+
+              <div className="relative mb-4">
+                <h4 className="text-lg font-bold text-emerald-300 mb-2">受賞作品</h4>
                 <p className="text-white font-semibold mb-2">「LOCAL HEROES NEXT｜わたしたちが動けば、世界が変わる」</p>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-300 text-sm leading-relaxed">
                   特別な人でなくても、小さな1歩から地球を変えられる。普通の若者がSNSやAIを使ってローカルから変化を起こす物語。
                 </p>
               </div>
-              <div className="pt-4 border-t border-white/10">
-                <h4 className="text-sm font-bold text-gray-400 mb-2">トークテーマ</h4>
-                <ul className="text-sm text-gray-300 space-y-1">
-                  <li>• AI×ローカルで描きたい世界</li>
-                  <li>• 生成AIででここまでできる制作プロセス</li>
-                  <li>• 地方・一次産業の未開拓の可能性</li>
+
+              <div className="relative pt-4 border-t border-emerald-400/20">
+                <h4 className="text-sm font-bold text-emerald-300 mb-3">トークテーマ</h4>
+                <ul className="text-sm text-gray-300 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>AI×ローカルで描きたい世界</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>生成AIででここまでできる制作プロセス</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>地方・一次産業の未開拓の可能性</span>
+                  </li>
                 </ul>
               </div>
             </div>
 
-            {/* Speaker 2 */}
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10">
-              <div className="flex items-start gap-6 mb-6">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-pink-500 to-purple-500 flex items-center justify-center text-4xl font-black text-white">
+            {/* Speaker 2 - Enhanced */}
+            <div className="group relative bg-gradient-to-br from-pink-500/10 via-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-8 border border-pink-400/30 hover:border-pink-400/60 transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(236,72,153,0.2)]">
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              <div className="relative flex items-start gap-6 mb-6">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-pink-400 to-purple-400 flex items-center justify-center text-4xl font-black text-white shadow-[0_0_30px_rgba(236,72,153,0.4)]">
                   🌾
                 </div>
-                <div>
-                  <div className="inline-block px-4 py-1 bg-green-500/20 border border-green-500/30 rounded-full mb-2">
-                    <span className="text-green-400 text-sm font-bold">農情人賞 + 前回グランプリ</span>
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-2 px-4 py-1 bg-gradient-to-r from-green-500/30 to-emerald-500/30 border border-green-400/50 rounded-full mb-2 backdrop-blur-sm">
+                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
+                    <span className="text-green-300 text-sm font-bold">農情人賞 + 前回グランプリ</span>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">大森研一</h3>
-                  <p className="text-gray-400 text-sm">AIクリエイター</p>
+                  <p className="text-gray-300 text-sm font-medium">AIクリエイター</p>
                 </div>
               </div>
-              <div className="mb-4">
-                <h4 className="text-lg font-bold text-pink-400 mb-2">受賞作品（今回）</h4>
+
+              <div className="relative mb-4">
+                <h4 className="text-lg font-bold text-pink-300 mb-2">受賞作品（今回）</h4>
                 <p className="text-white font-semibold mb-2">「アグリ☆ビート_アイドル兼プロデューサー」</p>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-300 text-sm leading-relaxed">
                   農業×アイドル×推し文化。エンタメの力で一次産業を「推せる・楽しい・カッコいい」に変換する革新的アプローチ。
                 </p>
               </div>
-              <div className="pt-4 border-t border-white/10">
-                <h4 className="text-sm font-bold text-gray-400 mb-2">トークテーマ</h4>
-                <ul className="text-sm text-gray-300 space-y-1">
-                  <li>• ローカル×エンタメ×AIの掛け算</li>
-                  <li>• Sora2がもたらした新たな表現のカタチ</li>
-                  <li>• 地方クリエイターにとっての追い風</li>
+
+              <div className="relative pt-4 border-t border-pink-400/20">
+                <h4 className="text-sm font-bold text-pink-300 mb-3">トークテーマ</h4>
+                <ul className="text-sm text-gray-300 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-pink-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>ローカル×エンタメ×AIの掛け算</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-pink-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>Sora2がもたらした新たな表現のカタチ</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-pink-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>地方クリエイターにとっての追い風</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -190,14 +270,23 @@ export default function SeminarPage() {
         </div>
       </section>
 
-      {/* Program Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-slate-950 to-slate-900">
-        <div className="max-w-6xl mx-auto">
+      {/* Program Section - Enhanced */}
+      <section className="relative py-20 px-6 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px]" />
+          <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px]" />
+        </div>
+
+        <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-6">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-400/30 rounded-full mb-6 backdrop-blur-sm">
+              <span className="text-cyan-300 font-bold text-sm tracking-wider">PROGRAM</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-purple-300 to-cyan-300 mb-6 drop-shadow-[0_0_30px_rgba(34,211,238,0.3)]">
               プログラム
             </h2>
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-300 text-lg font-medium">
               60分で学ぶ、AI時代のローカルキャリア戦略
             </p>
           </div>
@@ -237,19 +326,24 @@ export default function SeminarPage() {
                 color: 'from-slate-500 to-slate-600'
               }
             ].map((session, index) => (
-              <div key={index} className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hover:border-white/30 transition-all duration-300">
-                <div className="flex flex-col md:flex-row md:items-center gap-4">
-                  <div className={`flex-shrink-0 px-6 py-3 bg-gradient-to-r ${session.color} rounded-xl text-white font-bold text-sm`}>
+              <div key={index} className="group relative bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-slate-800/50 backdrop-blur-xl rounded-3xl p-6 border border-white/10 hover:border-white/30 transition-all duration-300 hover:scale-[1.02] shadow-[0_0_30px_rgba(0,0,0,0.3)]">
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                <div className="relative flex flex-col md:flex-row md:items-center gap-4">
+                  <div className={`flex-shrink-0 px-6 py-3 bg-gradient-to-r ${session.color} rounded-xl text-white font-bold text-sm shadow-lg`}>
                     {session.time}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-2">{session.title}</h3>
+                    <h3 className="text-xl font-bold text-white mb-2 leading-tight">{session.title}</h3>
                     {session.speaker && (
-                      <div className="inline-block px-3 py-1 bg-emerald-500/20 border border-emerald-500/30 rounded-full mb-2">
-                        <span className="text-emerald-400 text-xs font-semibold">登壇：{session.speaker}</span>
+                      <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 border border-emerald-400/40 rounded-full mb-2 backdrop-blur-sm">
+                        <svg className="w-3 h-3 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-emerald-300 text-xs font-semibold">登壇：{session.speaker}</span>
                       </div>
                     )}
-                    <p className="text-gray-400 text-sm">{session.description}</p>
+                    <p className="text-gray-300 text-sm leading-relaxed">{session.description}</p>
                   </div>
                 </div>
               </div>
@@ -258,11 +352,19 @@ export default function SeminarPage() {
         </div>
       </section>
 
-      {/* Target Audience Section */}
-      <section className="py-20 px-6 bg-slate-950">
-        <div className="max-w-6xl mx-auto">
+      {/* Target Audience Section - Enhanced */}
+      <section className="relative py-20 px-6 bg-slate-950 overflow-hidden">
+        {/* Subtle Grid Background */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:3rem_3rem]" />
+        </div>
+
+        <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 mb-6">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 border border-emerald-400/30 rounded-full mb-6 backdrop-blur-sm">
+              <span className="text-emerald-300 font-bold text-sm tracking-wider">TARGET AUDIENCE</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-emerald-300 mb-6 drop-shadow-[0_0_30px_rgba(16,185,129,0.3)]">
               こんな方におすすめ
             </h2>
           </div>
@@ -276,7 +378,10 @@ export default function SeminarPage() {
                   '東京に行かずにAIで勝負したい',
                   '地方・一次産業×クリエイティブに興味',
                   '同世代のロールモデルから学びたい'
-                ]
+                ],
+                gradient: 'from-emerald-500/10 to-cyan-500/10',
+                borderColor: 'border-emerald-400/30 hover:border-emerald-400/60',
+                accentColor: 'text-emerald-400'
               },
               {
                 icon: '🌾',
@@ -285,7 +390,10 @@ export default function SeminarPage() {
                   '農業・地域のPR方法を知りたい',
                   'Z世代への伝え方を学びたい',
                   'AIツールの活用事例を知りたい'
-                ]
+                ],
+                gradient: 'from-cyan-500/10 to-purple-500/10',
+                borderColor: 'border-cyan-400/30 hover:border-cyan-400/60',
+                accentColor: 'text-cyan-400'
               },
               {
                 icon: '💼',
@@ -294,19 +402,24 @@ export default function SeminarPage() {
                   '動画制作の効率化を図りたい',
                   'Z世代向けコンテンツを作りたい',
                   '地方×AI事例を知りたい'
-                ]
+                ],
+                gradient: 'from-purple-500/10 to-pink-500/10',
+                borderColor: 'border-purple-400/30 hover:border-purple-400/60',
+                accentColor: 'text-purple-400'
               }
             ].map((audience, index) => (
-              <div key={index} className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:scale-105 transition-transform duration-300">
-                <div className="text-6xl mb-6">{audience.icon}</div>
-                <h3 className="text-2xl font-bold text-white mb-6">{audience.title}</h3>
-                <ul className="space-y-3">
+              <div key={index} className={`group relative bg-gradient-to-br ${audience.gradient} backdrop-blur-xl rounded-3xl p-8 border ${audience.borderColor} hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(0,0,0,0.3)]`}>
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                <div className="relative text-6xl mb-6 drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">{audience.icon}</div>
+                <h3 className="relative text-2xl font-bold text-white mb-6 leading-tight">{audience.title}</h3>
+                <ul className="relative space-y-3">
                   {audience.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-300">
-                      <svg className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className={`w-5 h-5 ${audience.accentColor} flex-shrink-0 mt-1`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      <span>{item}</span>
+                      <span className="leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -316,11 +429,19 @@ export default function SeminarPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 px-6 bg-slate-950">
-        <div className="max-w-4xl mx-auto">
+      {/* FAQ Section - Enhanced */}
+      <section className="relative py-20 px-6 bg-slate-950 overflow-hidden">
+        {/* Decorative Background */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(34,211,238,0.1),transparent_50%),radial-gradient(circle_at_70%_50%,rgba(168,85,247,0.1),transparent_50%)]" />
+        </div>
+
+        <div className="relative max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-6">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-400/30 rounded-full mb-6 backdrop-blur-sm">
+              <span className="text-cyan-300 font-bold text-sm tracking-wider">FAQ</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-purple-300 to-cyan-300 mb-6 drop-shadow-[0_0_30px_rgba(34,211,238,0.3)]">
               よくある質問
             </h2>
           </div>
@@ -348,30 +469,58 @@ export default function SeminarPage() {
                 a: 'Metagri研究所が運営する、AI×農業・地域に関心のある方々のコミュニティです。Discordやニュースレターで情報共有・交流を行っています。セミナー参加者には優先的にご招待します。'
               }
             ].map((faq, index) => (
-              <details key={index} className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hover:border-white/30 transition-all duration-300 group">
-                <summary className="cursor-pointer text-lg font-bold text-white flex items-center justify-between">
-                  <span>{faq.q}</span>
-                  <svg className="w-5 h-5 text-emerald-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
+              <details key={index} className="group bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-slate-800/50 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hover:border-cyan-400/30 transition-all duration-300 shadow-[0_0_30px_rgba(0,0,0,0.3)]">
+                <summary className="cursor-pointer text-lg font-bold text-white flex items-center justify-between list-none">
+                  <span className="flex-1 pr-4">{faq.q}</span>
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-cyan-500/20 to-purple-500/20 border border-cyan-400/30 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-cyan-400 group-open:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
                 </summary>
-                <p className="mt-4 text-gray-400 leading-relaxed">{faq.a}</p>
+                <p className="mt-4 text-gray-300 leading-relaxed pl-1">{faq.a}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-slate-950 to-emerald-950">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-cyan-300 to-emerald-400 mb-6">
+      {/* CTA Section - Enhanced */}
+      <section className="relative py-24 px-6 bg-gradient-to-b from-slate-950 via-emerald-950/30 to-slate-950 overflow-hidden">
+        {/* Animated Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-500/10 rounded-full blur-[150px] animate-pulse" style={{ animationDuration: '4s' }} />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px] animate-pulse" style={{ animationDuration: '5s', animationDelay: '1s' }} />
+        </div>
+
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        </div>
+
+        <div className="relative max-w-4xl mx-auto text-center">
+          <div className="inline-block px-6 py-2 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 border border-emerald-400/30 rounded-full mb-8 backdrop-blur-sm">
+            <span className="text-emerald-300 font-bold text-sm tracking-wider">JOIN US</span>
+          </div>
+
+          <h2 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-cyan-200 to-emerald-200 mb-6 leading-tight drop-shadow-[0_0_50px_rgba(16,185,129,0.5)]">
             あなたの『AI×◯◯』を、<br />
             ぜひ形にしてください
           </h2>
-          <p className="text-xl text-gray-300">
-            このセミナーが、新しい一歩を踏み出すきっかけになれば幸いです
+
+          <p className="text-xl md:text-2xl text-gray-200 mb-12 leading-relaxed">
+            このセミナーが、新しい一歩を踏み出す<br className="hidden md:block" />
+            きっかけになれば幸いです
           </p>
+
+          {/* Decorative Icons */}
+          <div className="flex items-center justify-center gap-8 text-4xl opacity-60">
+            <div className="animate-pulse" style={{ animationDuration: '3s' }}>🌾</div>
+            <div className="text-emerald-400 text-2xl">×</div>
+            <div className="animate-pulse" style={{ animationDuration: '3s', animationDelay: '1s' }}>🤖</div>
+            <div className="text-cyan-400 text-2xl">=</div>
+            <div className="animate-pulse" style={{ animationDuration: '3s', animationDelay: '2s' }}>🚀</div>
+          </div>
         </div>
       </section>
 
