@@ -181,7 +181,7 @@ export default function SeminarPage() {
                 <h4 className="text-sm font-bold text-gray-400 mb-2">トークテーマ</h4>
                 <ul className="text-sm text-gray-300 space-y-1">
                   <li>• ローカル×エンタメ×AIの掛け算</li>
-                  <li>• Sora2がもたらした表現のジャンプ</li>
+                  <li>• Sora2がもたらした新たな表現のカタチ</li>
                   <li>• 地方クリエイターにとっての追い風</li>
                 </ul>
               </div>
@@ -219,14 +219,14 @@ export default function SeminarPage() {
               {
                 time: '0:15 - 0:35',
                 title: 'ケーススタディ①：「LOCAL HEROES NEXT」',
-                description: '普通の若者×ローカル×AIが社会を動かす。グランプリ受賞者が語る制作の裏側（15分）と、AI×ローカルの可能性。その後、参加者からの質問に回答（5分）。',
+                description: '普通の若者×ローカル×AIが社会を動かす。グランプリ受賞者が語る制作の裏側（15分）と、AI×ローカルの可能性。その後、参加者や主催からの質問に回答いただきつつ対話（5分）。',
                 color: 'from-cyan-500 to-cyan-600',
                 speaker: 'Shinpei Kojima'
               },
               {
                 time: '0:35 - 0:55',
                 title: 'ケーススタディ②：「アグリ☆ビート」',
-                description: '推し文化×農業×AIでエンタメに変換する。Sora2がもたらした表現のジャンプと、ローカルクリエイターへのエール（15分）。その後、参加者からの質問に回答（5分）。',
+                description: '推し文化×農業×AIでエンタメに変換する。Sora2が映像革命。一次産業×動画生成AIの可能性。（15分）。その後、参加者や主催からの質問に回答いただきつつ対話（5分）。',
                 color: 'from-pink-500 to-purple-600',
                 speaker: '大森研一'
               },
