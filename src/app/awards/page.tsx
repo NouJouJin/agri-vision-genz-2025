@@ -26,7 +26,7 @@ export default function AwardsPage() {
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
               受賞者の皆様、素晴らしい作品をご応募いただき、誠にありがとうございました。<br />
-              Z世代の視点から描かれた農業の未来は、どれも創造性と情熱に溢れていました。<br />
+              Z世代に向けて描かれた農業の未来は、どれも創造性と情熱に溢れていました。<br />
               これからも、テクノロジーと農業の可能性を切り拓いていってください。
             </p>
             <div className="flex justify-center gap-4 text-5xl">
@@ -61,7 +61,7 @@ export default function AwardsPage() {
                   全13作品を見る
                 </h3>
                 <p className="text-gray-300 text-lg">
-                  Z世代が描く農業の未来、すべての作品をチェック！
+                  Z世代に向けた農業の未来、すべての作品をチェック！
                 </p>
               </div>
 

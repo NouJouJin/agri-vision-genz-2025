@@ -9,7 +9,7 @@ export default function Footer() {
               AGRI VISION <span className="text-green-400">for Gen Z</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Z世代のクリエイティビティと最新のAI技術で、
+              次世代クリエイターの創造性と最新のAI技術で、
               農業の未来を切り拓く動画生成AIコンテスト
             </p>
           </div>

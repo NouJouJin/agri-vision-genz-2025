@@ -39,7 +39,7 @@ export default function Entries() {
               Entry <span className="text-green-400">Works</span>
             </h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Z世代のクリエイターが生成AIで描く、農業の新しい未来
+              クリエイターが生成AIで描く、農業の新しい未来
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-emerald-500 mx-auto mt-6"></div>
           </motion.div>

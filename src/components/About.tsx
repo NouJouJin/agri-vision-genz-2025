@@ -71,7 +71,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">コンテストの目的</h3>
               <p className="text-gray-300 leading-relaxed">
-                Z世代のクリエイティビティと最新のAI技術を融合させ、農業の未来に新たな可能性を提示します。斬新なアイデアで農業の魅力を再発見します。
+                次世代クリエイターによる創造性と最新のAI技術を融合させ、農業の未来に新たな可能性を提示します。斬新なアイデアで農業の魅力を再発見します。
               </p>
             </motion.div>
 
@@ -104,7 +104,7 @@ export default function About() {
             </p>
             <p className="text-gray-300 text-center max-w-3xl mx-auto leading-relaxed">
               Sora、Runway、Pika Labsなどの最新動画生成AIツールを活用して、
-              Z世代ならではの視点で農業の未来を表現してください。
+              Z世代に向けた視点で農業の未来を表現してください。
               テクノロジーと自然の調和、持続可能性、革新的な農業のあり方など、
               自由な発想で農業の可能性を広げる作品をお待ちしています。
             </p>
