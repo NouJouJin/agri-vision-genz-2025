@@ -5,58 +5,99 @@ import Footer from '@/components/Footer';
 export default function SeminarPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950">
-      {/* Hero Section */}
+      {/* Hero Section - Ultra Refined */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20">
-        {/* Futuristic Grid Background */}
+        {/* Multi-layered Futuristic Background */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/5 via-transparent to-cyan-500/5" />
+          {/* Primary Grid */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b981_1px,transparent_1px),linear-gradient(to_bottom,#10b981_1px,transparent_1px)] bg-[size:6rem_6rem] opacity-[0.03]" />
+          {/* Secondary Fine Grid */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#06b6d4_1px,transparent_1px),linear-gradient(to_bottom,#06b6d4_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-[0.02]" />
+          {/* Radial Gradient Overlay */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.15),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(6,182,212,0.1),transparent_50%)]" />
         </div>
 
-        {/* Enhanced Animated Glows */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-emerald-500/30 rounded-full blur-[128px] animate-pulse" style={{ animationDuration: '4s' }} />
-          <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-cyan-400/25 rounded-full blur-[128px] animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }} />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-purple-500/15 rounded-full blur-[128px] animate-pulse" style={{ animationDuration: '5s', animationDelay: '2s' }} />
-          <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-pink-500/20 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '7s', animationDelay: '3s' }} />
+        {/* Sophisticated Animated Glows with More Layers */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Primary Glows */}
+          <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-emerald-500/30 rounded-full blur-[140px] animate-pulse" style={{ animationDuration: '8s' }} />
+          <div className="absolute bottom-20 right-10 w-[600px] h-[600px] bg-cyan-400/25 rounded-full blur-[140px] animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
+
+          {/* Secondary Glows */}
+          <div className="absolute top-1/3 right-1/3 w-[400px] h-[400px] bg-teal-400/20 rounded-full blur-[120px] animate-pulse" style={{ animationDuration: '7s', animationDelay: '1s' }} />
+          <div className="absolute bottom-1/3 left-1/3 w-[450px] h-[450px] bg-emerald-300/15 rounded-full blur-[130px] animate-pulse" style={{ animationDuration: '9s', animationDelay: '3s' }} />
+
+          {/* Accent Glows */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-purple-500/10 via-transparent to-transparent blur-[150px] animate-pulse" style={{ animationDuration: '12s', animationDelay: '4s' }} />
+          <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-pink-400/15 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '6s', animationDelay: '5s' }} />
+        </div>
+
+        {/* Floating Particles Effect */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-emerald-400/40 rounded-full animate-pulse" style={{ animationDuration: '3s' }} />
+          <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-cyan-400/30 rounded-full animate-pulse" style={{ animationDuration: '4s', animationDelay: '1s' }} />
+          <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-teal-400/35 rounded-full animate-pulse" style={{ animationDuration: '5s', animationDelay: '2s' }} />
+          <div className="absolute top-2/3 right-1/4 w-1 h-1 bg-emerald-300/40 rounded-full animate-pulse" style={{ animationDuration: '3.5s', animationDelay: '1.5s' }} />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto text-center">
-          {/* Enhanced Label with Glow */}
-          <div className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-emerald-500/20 border border-emerald-400/50 rounded-full mb-8 backdrop-blur-md shadow-[0_0_30px_rgba(16,185,129,0.3)]">
-            <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.8)]" />
-            <span className="text-emerald-300 font-bold text-sm tracking-wider">AGRI VISION for Gen Z 受賞記念セミナー</span>
+          {/* Premium Label Badge */}
+          <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-emerald-500/20 border border-emerald-400/50 rounded-full mb-10 backdrop-blur-lg shadow-[0_0_40px_rgba(16,185,129,0.4),0_0_80px_rgba(6,182,212,0.2)]">
+            <div className="relative">
+              <div className="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_12px_rgba(16,185,129,1)]" />
+              <div className="absolute inset-0 w-2.5 h-2.5 bg-emerald-400 rounded-full animate-ping opacity-75" />
+            </div>
+            <span className="text-emerald-200 font-bold text-sm md:text-base tracking-widest uppercase">AGRI VISION for Gen Z 受賞記念セミナー</span>
           </div>
 
-          {/* Main Title with Enhanced Gradient and Glow */}
-          <h1 className="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-200 to-emerald-300 mb-6 leading-tight drop-shadow-[0_0_50px_rgba(16,185,129,0.5)] animate-[gradient_6s_ease_infinite]">
-            AIで地方から世界へ
-          </h1>
+          {/* Main Title with Multi-layer Gradient and Enhanced Glow */}
+          <div className="relative mb-8">
+            <h1 className="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-cyan-100 to-teal-200 leading-tight animate-[pulse_8s_ease-in-out_infinite]" style={{
+              textShadow: '0 0 80px rgba(16,185,129,0.5), 0 0 120px rgba(6,182,212,0.3)'
+            }}>
+              AIで地方から世界へ
+            </h1>
+            {/* Glow effect behind title */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-24 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-emerald-500/20 blur-3xl -z-10" />
+          </div>
 
-          <p className="text-3xl md:text-4xl font-bold text-white mb-8 drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
-            一次産業×AIクリエイターの新たな未来
+          <p className="text-2xl md:text-5xl font-bold text-white mb-10 leading-tight" style={{
+            textShadow: '0 4px 30px rgba(0,0,0,0.6), 0 0 60px rgba(16,185,129,0.2)'
+          }}>
+            一次産業×AIクリエイターの<br className="md:hidden" />
+            <span className="bg-gradient-to-r from-emerald-300 to-cyan-300 bg-clip-text text-transparent">新たな未来</span>
           </p>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-300 mb-4">
-            都会じゃなくても、資本がなくても<br className="md:hidden" />
-            <span className="text-emerald-400 font-bold">「武器」を持てる時代へ</span>
+          {/* Subtitle with Better Hierarchy */}
+          <p className="text-xl md:text-2xl text-gray-200 mb-3 leading-relaxed">
+            都会じゃなくても、資本がなくても
+          </p>
+          <p className="text-2xl md:text-3xl font-bold mb-8">
+            <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(16,185,129,0.6)]">
+              「武器」を持てる時代へ
+            </span>
           </p>
 
-          <p className="text-lg md:text-xl text-gray-400 mb-12">
+          <p className="text-base md:text-lg text-gray-400 mb-14 tracking-wide">
             AI時代のローカルキャリア戦略
           </p>
 
-          {/* Enhanced CTA Button with Glow */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
+          {/* Premium CTA Button with Advanced Effects */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
             <a
               href="#details"
-              className="group relative inline-flex items-center gap-2 px-12 py-6 bg-gradient-to-r from-emerald-500 via-cyan-500 to-emerald-500 text-white font-bold text-lg rounded-2xl shadow-[0_0_50px_rgba(16,185,129,0.4)] hover:shadow-[0_0_70px_rgba(16,185,129,0.6)] transition-all duration-300 hover:scale-105 overflow-hidden"
+              className="group relative inline-flex items-center gap-3 px-14 py-6 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 text-white font-bold text-lg rounded-2xl overflow-hidden transition-all duration-500 hover:scale-110 shadow-[0_0_60px_rgba(16,185,129,0.5),0_0_100px_rgba(6,182,212,0.3)] hover:shadow-[0_0_80px_rgba(16,185,129,0.7),0_0_120px_rgba(6,182,212,0.5),0_0_160px_rgba(20,184,166,0.3)]"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-emerald-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <span className="relative">詳細を見る</span>
-              <svg className="relative w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              {/* Animated Background Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              {/* Shimmer Effect */}
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
+              <span className="relative z-10 tracking-wide">セミナー詳細を見る</span>
+              <svg className="relative z-10 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </a>
           </div>
@@ -210,7 +251,7 @@ export default function SeminarPage() {
                     <svg className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>地方・一次産業の未開拓の可能性</span>
+                    <span>AI活用で未開拓の価値を発見・発展させる可能性</span>
                   </li>
                 </ul>
               </div>
